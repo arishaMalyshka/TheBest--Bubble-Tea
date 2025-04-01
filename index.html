@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Best Bubble Tea Places</title>
+<style>
+  html { 
+    color-scheme: light dark; 
+  }
+  
+  body { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    font-family: 'Segoe UI', Tahoma, Verdana, Arial, sans-serif;
+    padding: 20px;
+    background-color: #fff9fa;
+  }
+  
+  h1 { 
+    color: #ff6b88; 
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    color: #ff6b88;
+    text-align: center;
+    margin: 40px 0 15px;
+    font-size: 1.8em;
+  }
+
+  .maps-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .map-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: scale(0.98);
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    animation: pulse 4s infinite;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 2px solid rgba(255,107,136,0.2);
+    background: white;
+    height: 500px;
+  }
+  
+  
+  .map-container:hover {
+    transform: scale(1);
+    animation: none;
+    box-shadow: 0 15px 30px rgba(255, 107, 136, 0.3);
+    border-color: #ff6b88;
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  p {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 1.1em;
+  }
+
+
+</style>
+</head>
+<body>
+<h1>The Best Bubble Tea in SPB</h1>
+
+<div class="maps-grid">
+  <div class="map-section">
+    <h2>Google Maps</h2>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/d/embed?mid=1Lm5mqAqyZaD85GKfCk2WWjFnIYuMeC4&ehbc=2E312F" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+  <div class="map-section">
+    <h2>Yandex Maps</h2>
+    <div class="map-container">
+      <iframe 
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Aaa859d7dd551a2ace7933f6b521e9e9b94b4b877e1c749b2a5a121d504c592eb&amp;source=constructor"
+        frameborder="0">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<p>Are you sad? Just drink Bubble Tea! It'll make your life better</p>
+
+</body>
+</html>

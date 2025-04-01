@@ -1,0 +1,6 @@
+git clone https://github.com/ваш-логин/bubble-tea-spb.git
+cd bubble-tea-spb
+mv ваш-файл.html index.html
+git add index.html
+git commit -m "Добавил карту бабл-ти"
+git push origin main
